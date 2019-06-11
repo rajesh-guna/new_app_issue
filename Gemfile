@@ -8,7 +8,7 @@ gem "rails","3.2.22.5"
 gem "mysql2", '~> 0.3.10'#'0.4.3'
 gem 'json', '1.8.6'
 # gem 'activerecord-mysql2-adapter'
-gem 'sqlite3', '~> 1.3.10'
+# gem 'sqlite3', '~> 1.3.10'
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
