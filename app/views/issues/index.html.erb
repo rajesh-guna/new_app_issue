@@ -1,3 +1,6 @@
+<b> to search record field_name:value, for a date search date_field_name:start_date,end_date</b>
+<p> supported fields description, priority, status and last_modified_at</p>
+<p> <b>query eg:</b> status:closed&last_modified_at:2019-01-01,2019-12-01</p>
 <%=form_for @issues, :url => { :action => "search" }, :html => { :method => :post, :id => "Updateform" } do |f| %>
 Search: <input name="query" value=""/>
 </br>
