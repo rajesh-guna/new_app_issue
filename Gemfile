@@ -45,3 +45,6 @@ gem 'jbuilder', '~> 2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+
+gem 'test-unit', '~> 3.0'
