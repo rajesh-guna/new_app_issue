@@ -1,6 +1,7 @@
-<b> to search record field_name:value, for a date search date_field_name:start_date,end_date</b>
-<p> supported fields description, priority, status and last_modified_at</p>
-<p> <b>query eg:</b> status:closed&last_modified_at:2019-01-01,2019-12-01</p>
+<b> To search record</b> with text field <b><i>field_name:value</i></b>, for a date field <b><i>date_field_name:start_date,end_date</i></b>
+<br>
+<p>Supported fields description, priority, status and last_modified_at</p>
+<p> <b>query eg:</b> <i>status:closed&last_modified_at:2019-01-01,2019-12-01</i></p>
 <%=form_for @issues, :url => { :action => "search" }, :html => { :method => :post, :id => "Updateform" } do |f| %>
 Search: <input name="query" value=""/>
 </br>
@@ -8,6 +9,10 @@ Search: <input name="query" value=""/>
 <%end%>
 </br>
 </br>
+Note:
+<span>Supported only for list and edit page, for adding pagination/new record/user session and login needs some more time.</span>
+<br>
+<br>
 <table>
     <th>description</th>
     <th>priority</th>
