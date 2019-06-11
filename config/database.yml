@@ -8,11 +8,11 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  host: 127.0.0.1
   
 development:
   <<: *default
   database: new_app_development
+  host: 127.0.0.1
   username: root
   password:
 # Warning: The database defined as "test" will be erased and
@@ -24,6 +24,9 @@ staging:
 test: 
   <<: *default
   database: new_app_test
+  host: 127.0.0.1
+  username: root
+  password:
 production:
   <<: *default
   host: mysql2://b1956486d577fa:649ec8f4@us-cdbr-iron-east-02.cleardb.net/heroku_40eddb2f5266297?reconnect=true
