@@ -12,7 +12,7 @@ default: &default
 development:
   <<: *default
   database: new_app_development
-  host: 127.0.0.1
+  host: mysql2://b1956486d577fa:649ec8f4@us-cdbr-iron-east-02.cleardb.net/heroku_40eddb2f5266297?reconnect=true
   username: root
   password:
 # Warning: The database defined as "test" will be erased and
@@ -24,7 +24,7 @@ staging:
 test: 
   <<: *default
   database: new_app_test
-  host: 127.0.0.1
+  host: mysql2://b1956486d577fa:649ec8f4@us-cdbr-iron-east-02.cleardb.net/heroku_40eddb2f5266297?reconnect=true
   username: root
   password:
 production:
