@@ -9,12 +9,12 @@ default: &default
   encoding: utf8
   pool: 5
   host: 127.0.0.1
-  username: root
-  password:
-
+  
 development:
   <<: *default
   database: new_app_development
+  username: root
+  password:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
@@ -26,4 +26,5 @@ test:
   database: new_app_test
 production:
   <<: *default
+  host: mysql2://b1956486d577fa:649ec8f4@us-cdbr-iron-east-02.cleardb.net/heroku_40eddb2f5266297?reconnect=true
   database: new_app_production
