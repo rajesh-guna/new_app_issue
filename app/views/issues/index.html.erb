@@ -1,0 +1,25 @@
+<%=form_for @issues, :url => { :action => "search" }, :html => { :method => :post, :id => "Updateform" } do |f| %>
+Search: <input name="query" value=""/>
+</br>
+<%= f.submit "search"%>
+<%end%>
+</br>
+</br>
+<table>
+    <th>description</th>
+    <th>priority</th>
+    <th>status</th>
+    <th>submitted_by</th>
+    <th>last_modifed_date</th>
+    <th>action</th>
+    <% @issues.each do |issue| %>
+        <tr>
+           <td><%= issue.description %></td>
+           <td><%= issue.priority %></td>
+           <td><%= issue.status %></td>
+           <td><%= issue.submitted_by %></td>
+           <td><%= issue.updated_at %></td>
+           <td><a href="/issues/<%=issue.id%>/edit">edit</a></td>   
+        </tr>
+    <%end%>
+</table>

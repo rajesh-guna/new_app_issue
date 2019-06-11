@@ -1,0 +1,12 @@
+<%=form_for @issue, :url => { :action => "update" }, :html => { :method => :put, :id => "Updateform" } do |f| %>
+  <label>description</label>
+  <input value=<%=@issue.description%> name=issue[description]>
+  </br>
+  <label>priority</label>
+  <input value=<%=@issue.priority%> name=issue[priority]>
+  </br>
+  <label>status</label>
+  <input value=<%=@issue.status%> name=issue[status]>
+  </br>
+  <%= f.submit "submit"%>
+<%end%>
