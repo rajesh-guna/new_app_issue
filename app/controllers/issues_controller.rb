@@ -6,6 +6,7 @@ class IssuesController< ApplicationController
   ALLOWED_ATTRIBUTES = [:description, :priority, :status, :last_modified_at]
   DATE_FIELDS = [:last_modified_at]
   STRING_FIELDS  = [:description, :priority, :status]
+  ALLOWED_ATTRIBUTES = DATE_FIELDS | STRING_FIELDS
   MAPPING = {
     last_modified_at: :updated_at
   }

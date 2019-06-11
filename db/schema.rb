@@ -9,19 +9,19 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended that you check this file into your version control system.
+# It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170324145012) do
+ActiveRecord::Schema.define(:version => 20170324145012) do
 
-  create_table "issues", force: :cascade do |t|
-    t.string   "description",  limit: 20
-    t.integer  "priority",     limit: 4
-    t.string   "status",       limit: 255
-    t.string   "submitted_by", limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+  create_table "issues", :force => true do |t|
+    t.string   "description",  :limit => 20
+    t.integer  "priority"
+    t.string   "status"
+    t.string   "submitted_by"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
-  add_index "issues", ["updated_at"], name: "issues_updated_at", using: :btree
+  add_index "issues", ["updated_at"], :name => "issues_updated_at"
 
 end
