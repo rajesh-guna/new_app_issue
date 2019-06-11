@@ -7,6 +7,7 @@ gem "rails","3.2.22.5"
 # gem 'sqlite3'
 gem "mysql2", '~> 0.3.21'
 gem 'json', '1.8.6'
+gem 'puma'
 # gem 'activerecord-mysql2-adapter'
 # gem 'sqlite3', '~> 1.3.10'
 # Use SCSS for stylesheets
