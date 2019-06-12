@@ -45,7 +45,7 @@ class IssuesController< ApplicationController
   private
 
     def load_object
-      @issue = Issue.find(params[:id])
+      @issue = Issue.find_by_id(params[:id].to_i)
     end
 
     def load_objects
