@@ -14,6 +14,7 @@ Note:
 <br>
 <br>
 <table>
+    <th>Id</th>
     <th>description</th>
     <th>priority</th>
     <th>status</th>
@@ -22,6 +23,7 @@ Note:
     <th>action</th>
     <% @issues.each do |issue| %>
         <tr>
+           <td><%= issue.id %></td>
            <td><%= issue.description %></td>
            <td><%= issue.priority %></td>
            <td><%= issue.status %></td>
