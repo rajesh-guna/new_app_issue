@@ -2,7 +2,7 @@
 <br>
 <p>Supported fields description, priority, status and last_modified_at</p>
 <p> <b>query eg:</b> <i>status:closed&last_modified_at:2019-01-01,2019-12-01</i></p>
-<%=form_for @issues, :url => { :action => "search" }, :html => { :method => :post, :id => "Updateform" } do |f| %>
+<%=form_for "test", :url => { :action => "search" }, :html => { :method => :post, :id => "Updateform" } do |f| %>
 Search: <input name="query" value=""/>
 </br>
 <%= f.submit "search"%>
