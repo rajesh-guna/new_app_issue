@@ -45,7 +45,7 @@ class IssuesController< ApplicationController
   private
 
     def load_object
-      @issue = Issue.find_by_id(params[:id].to_i)
+      @issue = Issue.where(id: params[:id].to_i).first
     end
 
     def load_objects
