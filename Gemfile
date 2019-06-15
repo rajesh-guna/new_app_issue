@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.4.6'
+# ruby '2.4.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails","3.2.22.5"
+gem "rails","4.2.10"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem "mysql2", '~> 0.3.21'
@@ -21,11 +21,11 @@ gem 'puma'
 # aws official gem to comsume AWS services
 #gem 'aws-sdk'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+# gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+# gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 # group :doc do
 #   gem 'sdoc', '~> 0.4.0'
