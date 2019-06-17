@@ -62,7 +62,7 @@ class IssuesController< ApplicationController
         end_date = dates[1]
         query = " and #{MAPPING[key.to_sym]} >  '" + start_date + "' and #{MAPPING[key.to_sym]} < '" + end_date + "'"
       elsif STRING_FIELDS.include?(key.to_sym)
-        query = " and #{key} like '%" + value + "%'"
+        query = " and #{key} in ('" + value + "')"
       end
       query
     end
