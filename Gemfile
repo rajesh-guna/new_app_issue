@@ -5,7 +5,7 @@ gem "rails","4.2.10"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem "mysql2", '~> 0.3.21'
-gem 'json', '1.8.6'
+gem 'json', '2.3.0'
 gem 'puma'
 # gem 'activerecord-mysql2-adapter'
 # gem 'sqlite3', '~> 1.3.10'
